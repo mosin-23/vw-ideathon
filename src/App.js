@@ -12,8 +12,8 @@ const App = () => {
     <div className=''>
       <Suspense fallback={<div className='flex justify-center items-center h-screen'><div className="w-10 h-10 border-4 border-t-blue-500 border-gray-300 rounded-full animate-spin items-center"></div></div>}>
         <Nav/>
-        <Routes>
-        <Route path="/" exact element={<Home />}></Route>
+        <Routes basename="/vw-ideathon">
+        <Route path="/vw-ideathon" exact element={<Home />}></Route>
         <Route path="/*"  element={<Home/>}></Route>
         <Route path="/monitor" exact element={<Monitoring/>}></Route>
         <Route path="/profile" exact element={<Profile/>}></Route>
