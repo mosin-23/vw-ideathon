@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React, { Suspense } from 'react'
+import {Routes,Route} from 'react-router-dom'
+import { lazy } from 'react'
+const Nav=lazy(()=> import('./Nav'));
+const AboutUs=lazy(()=> import('./AboutUs'));
+const Home=lazy(()=>import('./Components/Home'))
+const Monitoring=lazy(()=>import('./Components/Monitoring'));
+const Profile=lazy(()=>import('./Components/Profile'))
+const CarDetailsForm=lazy(()=>import('./Components/CarDetailForm.js'))
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=''>
+      <Suspense fallback={<div className='flex justify-center items-center h-screen'><div className="w-10 h-10 border-4 border-t-blue-500 border-gray-300 rounded-full animate-spin items-center"></div></div>}>
+        <Nav/>
+        <Routes>
+        <Route path="/" exact element={<Home />}></Route>
+        <Route path="/*"  element={<Home/>}></Route>
+        <Route path="/monitor" exact element={<Monitoring/>}></Route>
+        <Route path="/profile" exact element={<Profile/>}></Route>
+        <Route path="/service" exact element={<CarDetailsForm/>}></Route>
+        <Route path='/Aboutus'exact element={<AboutUs/>}></Route>
+        </Routes>
+      </Suspense>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
