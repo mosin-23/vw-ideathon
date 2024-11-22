@@ -1,6 +1,6 @@
 {
   "name": "vw",
-  "webpage":"https://mosin-23.github.io/vw-ideathon",
+  "homepage":"https://mosin-23.github.io/vw-ideathon",
   "version": "0.1.0",
   "private": false,
   "dependencies": {

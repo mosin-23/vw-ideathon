@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Marquee from "react-fast-marquee";
 import { PiEngine } from "react-icons/pi";
 import { BsFuelPump } from "react-icons/bs";
 import { IoMdSpeedometer } from "react-icons/io";
 import { FaCar } from "react-icons/fa";
-import Marq from './Marq';
+import vwimg from './vwimg.jpg'
 
 const Home = () => {
   const [en, seten] = useState('');
@@ -38,7 +37,7 @@ const Home = () => {
               <span>Live</span>
             </button>
           }
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1HlMtgW3dopi_zzgZnGclmf_seetnI46bA&s" className="w-full lg:w-96 mb-4" alt="" />
+          <img src={vwimg} className="w-full lg:w-96 mb-4" alt="" />
           <h1 className="font-bold p-1 flex text-center"><FaCar className='mr-2 mt-1'/> Car Model: <span className="italic  text-red-500">Volkswagen Virtus GT Plus Sport</span></h1>
           <h1 className="font-bold p-1">Reg No: <span className="italic">AP 39 JN XXXX</span></h1>
           <h1 className="font-bold p-1">Year: <span className="font-semibold text-gray-600">2023</span></h1>
@@ -62,7 +61,6 @@ const Home = () => {
         </div>
       </div>
       <ToastContainer position="top-center" />
-      <Marquee><Marq /></Marquee>
     </>
   );
 };
