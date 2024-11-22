@@ -16,7 +16,3 @@ Technology Stack:
 -CSS: Styled using Tailwind CSS for a responsive and modern UI
 
 You can view the working in this video:-https://drive.google.com/file/d/1NRWY1iobDpIOun4ztIz7lXv76NDEOwxh/view?usp=drive_link
-
-
-Contributing
-Feel free to fork the repository, make improvements, and submit pull requests. Contributions are welcome!
