@@ -2,8 +2,6 @@ Volkswagen i.mobilothon 4.0
 
 Welcome to the Volkswagen Car I Mobilothon project! This web application was developed to showcase innovative features and services for Volkswagen cars, focused on enhancing user experiences and improving car service interactions.
 
-Live Demo
-You can view the live demo of the application at https://mosin-23.github.io/vw-ideathon
 
 Features:
 -Home Page: A welcoming page with an overview of the features available in the app.
